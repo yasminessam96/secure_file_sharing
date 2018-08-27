@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="444.0" prefWidth="531.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="encryptBtn" layoutX="83.0" layoutY="172.0" mnemonicParsing="false" onAction="#encryptFile" text="Encrypt File" />
+      <Button fx:id="decryptBtn" layoutX="251.0" layoutY="386.0" mnemonicParsing="false" onAction="#decryptFile" text="Decrypt File" />
+      <TextField fx:id="fileField1" layoutX="97.0" layoutY="63.0" prefHeight="25.0" prefWidth="116.0" />
+      <TextField fx:id="keyText" layoutX="69.0" layoutY="116.0" prefHeight="25.0" prefWidth="288.0" />
+      <Label layoutX="18.0" layoutY="67.0" text="Source File" />
+      <Label layoutX="17.0" layoutY="120.0" text="Key" />
+      <Button fx:id="decryptKey" layoutX="82.0" layoutY="386.0" mnemonicParsing="false" onAction="#decryptKey" text="Decrypt Key" />
+      <Button fx:id="encryptKey" layoutX="252.0" layoutY="172.0" mnemonicParsing="false" onAction="#encryptKey" text="Encrypt Key" />
+      <Label layoutX="30.0" layoutY="14.0" text="Sender">
+         <font>
+            <Font name="Arial Bold Italic" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="223.0" text="Reciever">
+         <font>
+            <Font name="Arial Bold Italic" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="keyText1" layoutX="69.0" layoutY="328.0" prefHeight="25.0" prefWidth="288.0" />
+      <Label layoutX="26.0" layoutY="332.0" text="Key" />
+      <TextField fx:id="fileField2" layoutX="97.0" layoutY="276.0" prefHeight="25.0" prefWidth="116.0" />
+      <Label layoutX="27.0" layoutY="280.0" text="Source File" />
+      <Label layoutX="250.0" layoutY="67.0" text="Destination File" />
+      <TextField fx:id="fileField11" layoutX="365.0" layoutY="63.0" prefHeight="25.0" prefWidth="116.0" />
+      <TextField fx:id="fileField21" layoutX="365.0" layoutY="276.0" prefHeight="25.0" prefWidth="116.0" />
+      <Label layoutX="250.0" layoutY="280.0" text="Destination File" />
+   </children>
+</Pane>
